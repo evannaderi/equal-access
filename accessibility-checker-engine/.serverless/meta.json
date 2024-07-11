@@ -1,0 +1,65 @@
+{
+  "/Users/ev230759/Documents/Programs/ea2/equal-access/accessibility-checker-engine": {
+    "versionSfCore": null,
+    "versionFramework": "4.1.11",
+    "isWithinCompose": false,
+    "isCompose": false,
+    "composeOrgName": null,
+    "composeServiceName": null,
+    "servicePath": "/Users/ev230759/Documents/Programs/ea2/equal-access/accessibility-checker-engine",
+    "serviceConfigFileName": "serverless.yml",
+    "service": {
+      "service": "test-service",
+      "provider": {
+        "name": "aws",
+        "runtime": "nodejs14.x"
+      },
+      "functions": {
+        "testFunction": {
+          "handler": "index.handler"
+        }
+      },
+      "plugins": [
+        "serverless-offline"
+      ],
+      "package": {
+        "include": [
+          "node_modules/**",
+          "dist/**"
+        ]
+      }
+    },
+    "serviceRawFile": "service: test-service\n\nprovider:\n  name: aws\n  runtime: nodejs14.x\n\nfunctions:\n  testFunction:\n    handler: index.handler\n\nplugins:\n  - serverless-offline\n\npackage:\n  include:\n    - node_modules/**\n    - dist/**\n",
+    "command": [
+      "offline"
+    ],
+    "options": {},
+    "error": {
+      "message": "AWS credentials missing or invalid. Run \"serverless\" to set up AWS credentials, or learn more in our docs: http://slss.io/aws-creds-setup. Original error from AWS: Could not load credentials from any providers",
+      "code": "AWS_CREDENTIALS_MISSING"
+    },
+    "machineId": "9ff29c38f94f81f939e6f743997ab7de",
+    "accessKeyV2": "<REDACTED>",
+    "accessKeyV1": "<REDACTED>",
+    "orgId": "80425f92-47b9-4d82-ad5f-4fb8579c5730",
+    "orgName": "universityofcentralflorida",
+    "userId": "4fjTrw9LZcVWqxbW16",
+    "dashboard": {
+      "isEnabledForService": false,
+      "requiredAuthentication": false,
+      "orgFeaturesInUse": null,
+      "orgObservabilityIntegrations": null,
+      "serviceAppId": null,
+      "serviceProvider": null,
+      "instanceParameters": null
+    },
+    "userName": "universityofcentralflorida",
+    "subscription": null,
+    "userEmail": "evanvnaderi@gmail.com",
+    "serviceProviderAwsCfStackId": null,
+    "serviceProviderAwsCfStackCreated": null,
+    "serviceProviderAwsCfStackUpdated": null,
+    "serviceProviderAwsCfStackStatus": null,
+    "serviceProviderAwsCfStackOutputs": null
+  }
+}

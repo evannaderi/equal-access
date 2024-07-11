@@ -1,0 +1,19 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: universityofcentralflorida
+service: test-service
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  testFunction:
+    handler: index.handler
+
+plugins:
+  - serverless-offline
+
+package:
+  include:
+    - node_modules/**
+    - dist/**
