@@ -25,42 +25,54 @@ exports.handler = async (event) => {
       headless: process.env.IS_LOCAL ? false : chromium.headless,
     });
 
-    const [page] = await browser.pages();
+    if (!Array.isArray(event.html)) { 
+        return {
+          statusCode: 200,
+          body: "You did not provide an array of html elements!" 
+        };
+    }
 
-    console.log("Successfully got page")
-
-    const htmlContent = event.html || `
+    const htmlPages = Array.isArray(event.html) ? event.html : [event.html || `
       <!DOCTYPE html>
       <html lang="en">
       <head>
-          <title>Test Document</title>
+        <title>Test Document</title>
       </head>
       <body>
-          <h1>Test Page</h1>
-          <a href="#">Link with no description to test</a>
+        <h1>Test Page</h1>
+        <a href="#">Link with no description to test</a>
       </body>
       </html>
-    `;
+    `];
 
-    await page.setContent(htmlContent, { waitUntil: 'domcontentloaded' });
+    const reports = [];
 
-    await page.addScriptTag({ path: path.join(__dirname, 'dist/ace.js') });
+    for (const htmlContent of htmlPages) {
+      const page = await browser.newPage();
+      console.log("Successfully created new page");
 
-    const report = await page.evaluate(() => {
-      return new Promise((resolve, reject) => {
-        const checker = new ace.Checker();
-        checker.check(document, ["IBM_Accessibility"])
-          .then(function (report) {
-            resolve(report);
-          }).catch(function (error) {
-            reject(error);
-          });
+      await page.setContent(htmlContent, { waitUntil: 'domcontentloaded' });
+      await page.addScriptTag({ path: path.join(__dirname, 'dist/ace.js') });
+
+      const report = await page.evaluate(() => {
+        return new Promise((resolve, reject) => {
+          const checker = new ace.Checker();
+          checker.check(document, ["IBM_Accessibility"])
+            .then(function (report) {
+              resolve(report);
+            }).catch(function (error) {
+              reject(error);
+            });
+        });
       });
-    });
+
+      reports.push(report);
+      await page.close();
+    }
 
     const filePath = isLocal ? 'report.txt' : '/tmp/report.txt';
 
-    fs.writeFile(filePath, JSON.stringify(report, null, 2), (err) => {
+    fs.writeFile(filePath, JSON.stringify(reports, null, 2), (err) => {
       if (err) {
         console.error('Error writing to file', err);
       } else {
@@ -70,7 +82,7 @@ exports.handler = async (event) => {
 
     return {
       statusCode: 200,
-      body: JSON.stringify(report, null, 2)
+      body: JSON.stringify(reports, null, 2)
     };
 
   } catch (error) {
