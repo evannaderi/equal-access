@@ -1,0 +1,8 @@
+{
+  "html": [
+    "<!DOCTYPE html><html lang=\"en\"><head><title>Test Document 1</title></head><body><h1>Test Page 1</h1><a href=\"#\">Link with no description to test</a></body></html>",
+    "<!DOCTYPE html><html lang=\"en\"><head><title>Test Document 2</title></head><body><h2>Test Page 2</h2><img src=\"image.jpg\" alt=\"\"></body></html>",
+    "<!DOCTYPE html><html lang=\"en\"><head><title>Test Document 3</title></head><body><h3>Test Page 3</h3><button>Click me</button></body></html>",
+    "<!DOCTYPE html><html lang=\"en\"><head><title>Test Document 3</title></head><body><h3>Test Page 4</h3><button>Click me</button></body></html>"
+  ]
+}
