@@ -20,7 +20,6 @@ exports.handler = async (event) => {
       headless: isLocal ? false : chromium.headless,
     });
 
-    // Parse the input, handling both direct invocation and API Gateway cases
     if (event.body) {
       try {
         const body = JSON.parse(event.body);
