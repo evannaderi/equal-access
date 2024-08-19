@@ -13,8 +13,9 @@ app.post('/check', async (req, res) => {
   let browser;
   try {
     browser = await puppeteer.launch({
-      args: ['--no-sandbox', '--disable-setuid-sandbox'],
-      executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || null,
+      args: puppeteer.defaultArgs(),
+      executablePath: puppeteer.executablePath(),
+      headless: true,
     });
 
     let htmlArray = req.body.html;

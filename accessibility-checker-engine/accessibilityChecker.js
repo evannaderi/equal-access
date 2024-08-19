@@ -14,11 +14,11 @@ async function checkAccessibility(browser, htmlContent) {
       
       checker.check(document, [ruleset])
         .then(function (report) {
-          // for (let idx=0; idx<report.results.length; ++idx) {
-          //   if (report.results[idx].value[1] === "PASS") {
-          //       report.results.splice(idx--,1);
-          //   }
-          // }
+          for (let idx=0; idx<report.results.length; ++idx) {
+             if (report.results[idx].value[1] === "PASS") {
+                 report.results.splice(idx--,1);
+             }
+          }
 
           resolve(report);
         }).catch(function (error) {

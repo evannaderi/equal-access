@@ -1,0 +1,2012 @@
+"results": [
+{
+"ruleId": "html_lang_exists",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]",
+"aria": "/document[1]"
+},
+"ruleTime": 1,
+"reasonId": "Fail_3",
+"message": "Page detected as HTML, but does not have a 'lang' attribute",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 0,
+"top": 0,
+"height": 3796,
+"width": 800
+},
+"snippet": "<html>",
+"category": "Accessibility"
+},
+{
+"ruleId": "page_title_exists",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]",
+"aria": "/document[1]"
+},
+"ruleTime": 0,
+"reasonId": "Fail_2",
+"message": "Missing <title> element in <head> element",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 0,
+"top": 0,
+"height": 3796,
+"width": 800
+},
+"snippet": "<html>",
+"category": "Accessibility"
+},
+{
+"ruleId": "text_block_heading",
+"value": [
+"VIOLATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[1]",
+"aria": "/document[1]/main[1]/paragraph[1]"
+},
+"ruleTime": 1,
+"reasonId": "potential_heading",
+"message": "Confirm this text 'Part 1: Mass Democracy' is used as a heading and if so, modify to use a heading element or role",
+"messageArgs": [
+"Part 1: Mass Democracy"
+],
+"apiArgs": [],
+"bounds": {
+"left": 8,
+"top": 67,
+"height": 56,
+"width": 784
+},
+"snippet": "<p>",
+"category": "Accessibility"
+},
+{
+"ruleId": "text_block_heading",
+"value": [
+"VIOLATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[1]/br[1]",
+"aria": "/document[1]/main[1]/paragraph[1]"
+},
+"ruleTime": 1,
+"reasonId": "potential_heading",
+"message": "Confirm this text 'Part 2: Market Revolution\n________________________________________________________' is used as a heading and if so, modify to use a heading element or role",
+"messageArgs": [
+"Part 2: Market Revolution\n________________________________________________________"
+],
+"apiArgs": [],
+"bounds": {
+"left": 177,
+"top": 81,
+"height": 0,
+"width": 0
+},
+"snippet": "<br>",
+"category": "Accessibility"
+},
+{
+"ruleId": "text_block_heading",
+"value": [
+"VIOLATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[1]/strong[2]/br[1]",
+"aria": "/document[1]/main[1]/paragraph[1]/strong[2]"
+},
+"ruleTime": 1,
+"reasonId": "potential_heading",
+"message": "Confirm this text '________________________________________________________' is used as a heading and if so, modify to use a heading element or role",
+"messageArgs": [
+"________________________________________________________"
+],
+"apiArgs": [],
+"bounds": {
+"left": 190,
+"top": 85,
+"height": 18,
+"width": 0
+},
+"snippet": "<br>",
+"category": "Accessibility"
+},
+{
+"ruleId": "text_block_heading",
+"value": [
+"VIOLATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[2]",
+"aria": "/document[1]/main[1]/paragraph[2]"
+},
+"ruleTime": 2,
+"reasonId": "potential_heading",
+"message": "Confirm this text 'Part 1: Towards Mass Democracy' is used as a heading and if so, modify to use a heading element or role",
+"messageArgs": [
+"Part 1: Towards Mass Democracy"
+],
+"apiArgs": [],
+"bounds": {
+"left": 8,
+"top": 138,
+"height": 111,
+"width": 784
+},
+"snippet": "<p>",
+"category": "Accessibility"
+},
+{
+"ruleId": "aria_accessiblename_exists",
+"value": [
+"RECOMMENDATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[1]/li[5]/ul[1]/li[7]/ul[1]/li[1]/img[1]",
+"aria": "/document[1]/main[1]/list[1]/listitem[5]/list[1]/listitem[7]/list[1]/listitem[1]/img[1]"
+},
+"ruleTime": 1,
+"reasonId": "fail_no_accessible_name",
+"message": "Element <img> with \"img\" role has no accessible name",
+"messageArgs": [
+"img",
+"img"
+],
+"apiArgs": [],
+"bounds": {
+"left": 128,
+"top": 1149,
+"height": 0,
+"width": 0
+},
+"snippet": "<img alt=\"Read This\" src=\"https://canvas-lti.cdl.ucf.edu/new_actionicons/static/images/2014/EN/icon_readthis.jpg\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "style_highcontrast_visible",
+"value": [
+"RECOMMENDATION",
+"MANUAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[1]/li[5]/ul[1]/li[7]/ul[1]/li[1]/span[1]/span[1]/a[2]",
+"aria": "/document[1]/main[1]/list[1]/listitem[5]/list[1]/listitem[7]/list[1]/listitem[1]/button[1]"
+},
+"ruleTime": 0,
+"reasonId": "Manual_1",
+"message": "Confirm Windows high contrast mode is supported when using CSS to include, position or alter non-decorative content",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 128,
+"top": 1135,
+"height": 37,
+"width": 643
+},
+"snippet": "<a href=\"https://ucf.test.instructure.com/courses/1436309/files/100843668/download?download_frd=1\" style=\"margin-inline-start: 5px; text-decoration: none;\" download=\"\" role=\"button\" class=\"file_download_btn\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[1]/li[5]/ul[1]/li[7]/ul[1]/li[1]/span[1]/span[1]/a[2]/span[1]/svg[1]",
+"aria": "/document[1]/main[1]/list[1]/listitem[5]/list[1]/listitem[7]/list[1]/listitem[1]/button[1]"
+},
+"ruleTime": 1,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 476,
+"top": 1138,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "aria_hidden_nontabbable",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[1]/li[5]/ul[1]/li[7]/ul[1]/li[1]/span[1]/a[1]",
+"aria": "/document[1]/main[1]/list[1]/listitem[5]/list[1]/listitem[7]/list[1]/listitem[1]/link[2]"
+},
+"ruleTime": 0,
+"reasonId": "Fail_1",
+"message": "Element \"a\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+"messageArgs": [
+"a"
+],
+"apiArgs": [],
+"bounds": {
+"left": 263,
+"top": 1154,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843668\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843668/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "element_tabbable_visible",
+"value": [
+"VIOLATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[1]/li[5]/ul[1]/li[7]/ul[1]/li[1]/span[1]/a[1]",
+"aria": "/document[1]/main[1]/list[1]/listitem[5]/list[1]/listitem[7]/list[1]/listitem[1]/link[2]"
+},
+"ruleTime": 0,
+"reasonId": "potential_visible",
+"message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 263,
+"top": 1154,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843668\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843668/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "a_target_warning",
+"value": [
+"RECOMMENDATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[1]/li[5]/ul[1]/li[10]/a[1]",
+"aria": "/document[1]/main[1]/list[1]/listitem[5]/list[1]/listitem[10]/link[1]"
+},
+"ruleTime": 0,
+"reasonId": "potential_warn",
+"message": "Inform the user when their input action will open a new window",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 88,
+"top": 1228,
+"height": 18,
+"width": 617
+},
+"snippet": "<a rel=\"noreferrer noopener\" target=\"_blank\" href=\"https://www.youtube.com/watch?v=1kJmw3nzuB4\" class=\"external youtubed\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[1]/li[5]/ul[1]/li[10]/a[1]/span[2]/svg[1]",
+"aria": "/document[1]/main[1]/list[1]/listitem[5]/list[1]/listitem[10]/link[1]/graphics-document[1]"
+},
+"ruleTime": 0,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 527,
+"top": 1231,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "element_tabbable_visible",
+"value": [
+"VIOLATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[1]/li[5]/ul[1]/li[10]/a[2]",
+"aria": "/document[1]/main[1]/list[1]/listitem[5]/list[1]/listitem[10]/link[2]"
+},
+"ruleTime": 0,
+"reasonId": "potential_visible",
+"message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 705,
+"top": 1228,
+"height": 18,
+"width": 0
+},
+"snippet": "<a class=\"youtubed\" href=\"https://www.youtube.com/watch?v=1kJmw3nzuB4\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "a_text_purpose",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[1]/li[5]/ul[1]/li[10]/a[2]",
+"aria": "/document[1]/main[1]/list[1]/listitem[5]/list[1]/listitem[10]/link[2]"
+},
+"ruleTime": 1,
+"reasonId": "fail_acc_name",
+"message": "Hyperlink has no link text, label or image with a text alternative",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 705,
+"top": 1228,
+"height": 18,
+"width": 0
+},
+"snippet": "<a class=\"youtubed\" href=\"https://www.youtube.com/watch?v=1kJmw3nzuB4\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "style_color_misuse",
+"value": [
+"VIOLATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[1]/li[5]/ul[1]/li[10]/a[2]/img[1]",
+"aria": "/document[1]/main[1]/list[1]/listitem[5]/list[1]/listitem[10]/link[2]/presentation[1]"
+},
+"ruleTime": 1,
+"reasonId": "Potential_1",
+"message": "Verify color is not used as the only visual means of conveying information",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 705,
+"top": 1242,
+"height": 0,
+"width": 0
+},
+"snippet": "<img style=\"background-image: url(\"//img.youtube.com/vi/1kJmw3nzuB4/2.jpg\");\" alt=\"\" class=\"media_comment_thumbnail\" src=\"/images/play_overlay.png\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "text_quoted_correctly",
+"value": [
+"VIOLATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[4]",
+"aria": "/document[1]/main[1]/paragraph[4]"
+},
+"ruleTime": 0,
+"reasonId": "Potential_1",
+"message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"man of the people?\"",
+"messageArgs": [
+"\"man of the people?\""
+],
+"apiArgs": [],
+"bounds": {
+"left": 8,
+"top": 1297,
+"height": 37,
+"width": 784
+},
+"snippet": "<p>",
+"category": "Accessibility"
+},
+{
+"ruleId": "aria_accessiblename_exists",
+"value": [
+"RECOMMENDATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[4]/img[1]",
+"aria": "/document[1]/main[1]/paragraph[4]/img[1]"
+},
+"ruleTime": 0,
+"reasonId": "fail_no_accessible_name",
+"message": "Element <img> with \"img\" role has no accessible name",
+"messageArgs": [
+"img",
+"img"
+],
+"apiArgs": [],
+"bounds": {
+"left": 8,
+"top": 1312,
+"height": 0,
+"width": 0
+},
+"snippet": "<img alt=\"Discussion\" src=\"https://canvas-lti.cdl.ucf.edu/new_actionicons/static/images/2014/EN/icon_discussion.png\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "list_structure_proper",
+"value": [
+"RECOMMENDATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[2]",
+"aria": "/document[1]/main[1]/list[2]"
+},
+"ruleTime": 0,
+"reasonId": "Potential_1",
+"message": "List element is missing or improperly structured",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 8,
+"top": 1350,
+"height": 242,
+"width": 784
+},
+"snippet": "<ul>",
+"category": "Accessibility"
+},
+{
+"ruleId": "aria_child_valid",
+"value": [
+"RECOMMENDATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[2]",
+"aria": "/document[1]/main[1]/list[2]"
+},
+"ruleTime": 1,
+"reasonId": "Fail_invalid_child",
+"message": "The element with role \"list\" owns the child element with the role \"list\" that is not one of the allowed role(s): \"listitem\"",
+"messageArgs": [
+"list",
+"list",
+"listitem"
+],
+"apiArgs": [],
+"bounds": {
+"left": 8,
+"top": 1350,
+"height": 242,
+"width": 784
+},
+"snippet": "<ul>",
+"category": "Accessibility"
+},
+{
+"ruleId": "aria_child_valid",
+"value": [
+"RECOMMENDATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[2]",
+"aria": "/document[1]/main[1]/list[2]"
+},
+"ruleTime": 1,
+"reasonId": "Fail_invalid_child",
+"message": "The element with role \"list\" owns the child element with the role \"list\" that is not one of the allowed role(s): \"listitem\"",
+"messageArgs": [
+"list",
+"list",
+"listitem"
+],
+"apiArgs": [],
+"bounds": {
+"left": 8,
+"top": 1350,
+"height": 242,
+"width": 784
+},
+"snippet": "<ul>",
+"category": "Accessibility"
+},
+{
+"ruleId": "a_target_warning",
+"value": [
+"RECOMMENDATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[2]/ul[1]/li[1]/ul[1]/li[2]/a[1]",
+"aria": "/document[1]/main[1]/list[2]/list[1]/listitem[1]/list[1]/listitem[2]/link[1]"
+},
+"ruleTime": 0,
+"reasonId": "potential_warn",
+"message": "Inform the user when their input action will open a new window",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 128,
+"top": 1406,
+"height": 18,
+"width": 426
+},
+"snippet": "<a rel=\"noreferrer noopener\" target=\"_blank\" href=\"https://www.youtube.com/watch?v=v5sq9e6hvrM\" class=\"external youtubed\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[2]/ul[1]/li[1]/ul[1]/li[2]/a[1]/span[2]/svg[1]",
+"aria": "/document[1]/main[1]/list[2]/list[1]/listitem[1]/list[1]/listitem[2]/link[1]/graphics-document[1]"
+},
+"ruleTime": 0,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 376,
+"top": 1409,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "element_tabbable_visible",
+"value": [
+"VIOLATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[2]/ul[1]/li[1]/ul[1]/li[2]/a[2]",
+"aria": "/document[1]/main[1]/list[2]/list[1]/listitem[1]/list[1]/listitem[2]/link[2]"
+},
+"ruleTime": 0,
+"reasonId": "potential_visible",
+"message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 554,
+"top": 1406,
+"height": 18,
+"width": 0
+},
+"snippet": "<a class=\"youtubed\" href=\"https://www.youtube.com/watch?v=v5sq9e6hvrM\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "a_text_purpose",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[2]/ul[1]/li[1]/ul[1]/li[2]/a[2]",
+"aria": "/document[1]/main[1]/list[2]/list[1]/listitem[1]/list[1]/listitem[2]/link[2]"
+},
+"ruleTime": 0,
+"reasonId": "fail_acc_name",
+"message": "Hyperlink has no link text, label or image with a text alternative",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 554,
+"top": 1406,
+"height": 18,
+"width": 0
+},
+"snippet": "<a class=\"youtubed\" href=\"https://www.youtube.com/watch?v=v5sq9e6hvrM\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "a_target_warning",
+"value": [
+"RECOMMENDATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[2]/li[4]/a[1]",
+"aria": "/document[1]/main[1]/list[2]/listitem[4]/link[1]"
+},
+"ruleTime": 0,
+"reasonId": "potential_warn",
+"message": "Inform the user when their input action will open a new window",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 48,
+"top": 1536,
+"height": 18,
+"width": 504
+},
+"snippet": "<a rel=\"noreferrer noopener\" target=\"_blank\" data-preview-alt=\"Presidential Minute With William Henry Harrison\" href=\"https://www.youtube.com/watch?v=dgTyhwDfQxs\" class=\"external youtubed\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[2]/li[4]/a[1]/span[2]/svg[1]",
+"aria": "/document[1]/main[1]/list[2]/listitem[4]/link[1]/graphics-document[1]"
+},
+"ruleTime": 0,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 374,
+"top": 1539,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "aria_accessiblename_exists",
+"value": [
+"RECOMMENDATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[2]/li[4]/a[2]/img[1]",
+"aria": "/document[1]/main[1]/list[2]/listitem[4]/link[2]/img[1]"
+},
+"ruleTime": 0,
+"reasonId": "fail_no_accessible_name",
+"message": "Element <img> with \"img\" role has no accessible name",
+"messageArgs": [
+"img",
+"img"
+],
+"apiArgs": [],
+"bounds": {
+"left": 48,
+"top": 1555,
+"height": 19,
+"width": 337
+},
+"snippet": "<img style=\"background-image: url(\"//img.youtube.com/vi/dgTyhwDfQxs/2.jpg\");\" alt=\"Presidential Minute With William Henry Harrison\" class=\"media_comment_thumbnail\" src=\"/images/play_overlay.png\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "a_target_warning",
+"value": [
+"RECOMMENDATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[2]/li[5]/a[1]",
+"aria": "/document[1]/main[1]/list[2]/listitem[5]/link[1]"
+},
+"ruleTime": 0,
+"reasonId": "potential_warn",
+"message": "Inform the user when their input action will open a new window",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 362,
+"top": 1573,
+"height": 18,
+"width": 213
+},
+"snippet": "<a rel=\"noreferrer noopener\" target=\"_blank\" data-preview-alt=\"\" href=\"https://www.history.com/topics/us-presidents/william-henry-harrison\" title=\"Link\" class=\"external\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[2]/li[5]/a[1]/span[2]/svg[1]",
+"aria": "/document[1]/main[1]/list[2]/listitem[5]/link[1]/graphics-document[1]"
+},
+"ruleTime": 0,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 397,
+"top": 1576,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "text_block_heading",
+"value": [
+"VIOLATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[5]",
+"aria": "/document[1]/main[1]/paragraph[5]"
+},
+"ruleTime": 1,
+"reasonId": "potential_heading",
+"message": "Confirm this text 'Part 2: Market Revolution: Agent for Change' is used as a heading and if so, modify to use a heading element or role",
+"messageArgs": [
+"Part 2: Market Revolution: Agent for Change"
+],
+"apiArgs": [],
+"bounds": {
+"left": 8,
+"top": 1608,
+"height": 19,
+"width": 784
+},
+"snippet": "<p>",
+"category": "Accessibility"
+},
+{
+"ruleId": "a_target_warning",
+"value": [
+"RECOMMENDATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[6]/a[1]",
+"aria": "/document[1]/main[1]/paragraph[6]/link[1]"
+},
+"ruleTime": 0,
+"reasonId": "potential_warn",
+"message": "Inform the user when their input action will open a new window",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 8,
+"top": 1643,
+"height": 18,
+"width": 213
+},
+"snippet": "<a rel=\"noreferrer noopener\" target=\"_blank\" data-preview-alt=\"\" href=\"https://youtu.be/kMe0oQfIhy4\" title=\"Link\" class=\"external youtubed\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[6]/a[1]/span[2]/svg[1]",
+"aria": "/document[1]/main[1]/paragraph[6]/link[1]/graphics-document[1]"
+},
+"ruleTime": 1,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 44,
+"top": 1645,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "element_tabbable_visible",
+"value": [
+"VIOLATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[6]/a[2]",
+"aria": "/document[1]/main[1]/paragraph[6]/link[2]"
+},
+"ruleTime": 0,
+"reasonId": "potential_visible",
+"message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 221,
+"top": 1643,
+"height": 18,
+"width": 0
+},
+"snippet": "<a class=\"youtubed\" href=\"https://youtu.be/kMe0oQfIhy4\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "a_text_purpose",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[6]/a[2]",
+"aria": "/document[1]/main[1]/paragraph[6]/link[2]"
+},
+"ruleTime": 1,
+"reasonId": "fail_acc_name",
+"message": "Hyperlink has no link text, label or image with a text alternative",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 221,
+"top": 1643,
+"height": 18,
+"width": 0
+},
+"snippet": "<a class=\"youtubed\" href=\"https://youtu.be/kMe0oQfIhy4\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "aria_accessiblename_exists",
+"value": [
+"RECOMMENDATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[4]/li[1]/ul[1]/li[2]/ul[1]/li[1]/img[1]",
+"aria": "/document[1]/main[1]/list[4]/listitem[1]/list[1]/listitem[2]/list[1]/listitem[1]/img[1]"
+},
+"ruleTime": 0,
+"reasonId": "fail_no_accessible_name",
+"message": "Element <img> with \"img\" role has no accessible name",
+"messageArgs": [
+"img",
+"img"
+],
+"apiArgs": [],
+"bounds": {
+"left": 128,
+"top": 1968,
+"height": 0,
+"width": 0
+},
+"snippet": "<img alt=\"Read This\" src=\"https://canvas-lti.cdl.ucf.edu/new_actionicons/static/images/2014/EN/icon_readthis.jpg\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[4]/li[1]/ul[1]/li[2]/ul[1]/li[1]/span[1]/span[1]/a[2]/span[1]/svg[1]",
+"aria": "/document[1]/main[1]/list[4]/listitem[1]/list[1]/listitem[2]/list[1]/listitem[1]/button[1]"
+},
+"ruleTime": 1,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 401,
+"top": 1956,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "aria_hidden_nontabbable",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[4]/li[1]/ul[1]/li[2]/ul[1]/li[1]/span[1]/a[1]",
+"aria": "/document[1]/main[1]/list[4]/listitem[1]/list[1]/listitem[2]/list[1]/listitem[1]/link[2]"
+},
+"ruleTime": 0,
+"reasonId": "Fail_1",
+"message": "Element \"a\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+"messageArgs": [
+"a"
+],
+"apiArgs": [],
+"bounds": {
+"left": 755,
+"top": 1953,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843635\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843635/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "element_tabbable_visible",
+"value": [
+"VIOLATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[4]/li[1]/ul[1]/li[2]/ul[1]/li[1]/span[1]/a[1]",
+"aria": "/document[1]/main[1]/list[4]/listitem[1]/list[1]/listitem[2]/list[1]/listitem[1]/link[2]"
+},
+"ruleTime": 0,
+"reasonId": "potential_visible",
+"message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 755,
+"top": 1953,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843635\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843635/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "a_target_warning",
+"value": [
+"RECOMMENDATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[4]/li[1]/ul[1]/li[9]/a[1]",
+"aria": "/document[1]/main[1]/list[4]/listitem[1]/list[1]/listitem[9]/link[1]"
+},
+"ruleTime": 0,
+"reasonId": "potential_warn",
+"message": "Inform the user when their input action will open a new window",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 434,
+"top": 2213,
+"height": 18,
+"width": 214
+},
+"snippet": "<a rel=\"noreferrer noopener\" target=\"_blank\" href=\"https://materia.ucf.edu/play/CflfU/market-revolution-inventions-and-their-inventors\" title=\"Link\" class=\"inline_disabled external\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[4]/li[1]/ul[1]/li[9]/a[1]/span[2]/svg[1]",
+"aria": "/document[1]/main[1]/list[4]/listitem[1]/list[1]/listitem[9]/link[1]/graphics-document[1]"
+},
+"ruleTime": 0,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 470,
+"top": 2216,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "a_target_warning",
+"value": [
+"RECOMMENDATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[4]/li[4]/ul[1]/li[4]/a[1]",
+"aria": "/document[1]/main[1]/list[4]/listitem[4]/list[1]/listitem[4]/link[1]"
+},
+"ruleTime": 0,
+"reasonId": "potential_warn",
+"message": "Inform the user when their input action will open a new window",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 372,
+"top": 2398,
+"height": 18,
+"width": 361
+},
+"snippet": "<a data-preview-alt=\"\" target=\"_blank\" href=\"http://www.eriecanal.org/UnionCollege/175th.html\" title=\"Link\" class=\"external\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "a_target_warning",
+"value": [
+"RECOMMENDATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/ul[5]/li[2]/ul[1]/li[3]/ul[1]/li[5]/ul[1]/li[1]/a[1]",
+"aria": "/document[1]/main[1]/list[5]/listitem[2]/list[1]/listitem[3]/list[1]/listitem[5]/list[1]/listitem[1]/link[1]"
+},
+"ruleTime": 0,
+"reasonId": "potential_warn",
+"message": "Inform the user when their input action will open a new window",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 168,
+"top": 3260,
+"height": 18,
+"width": 460
+},
+"snippet": "<a target=\"_blank\" href=\"http://media.pearsoncmg.com/ph/hss/SSA_SHARED_MEDIA_1/history/MHL/US/videos2/convent-large.html\" class=\"external\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "aria_accessiblename_exists",
+"value": [
+"RECOMMENDATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[8]/img[1]",
+"aria": "/document[1]/main[1]/paragraph[8]/img[1]"
+},
+"ruleTime": 0,
+"reasonId": "fail_no_accessible_name",
+"message": "Element <img> with \"img\" role has no accessible name",
+"messageArgs": [
+"img",
+"img"
+],
+"apiArgs": [],
+"bounds": {
+"left": 8,
+"top": 3346,
+"height": 0,
+"width": 0
+},
+"snippet": "<img alt=\"Explore\" src=\"https://canvas-lti.cdl.ucf.edu/new_actionicons/static/images/2014/EN/icon_explore.jpg\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[8]/em[1]/span[1]/span[1]/a[2]/span[1]/svg[1]",
+"aria": "/document[1]/main[1]/paragraph[8]/button[1]"
+},
+"ruleTime": 0,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 202,
+"top": 3353,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "aria_hidden_nontabbable",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[8]/em[1]/span[1]/a[1]",
+"aria": "/document[1]/main[1]/paragraph[8]/link[2]"
+},
+"ruleTime": 0,
+"reasonId": "Fail_1",
+"message": "Element \"a\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+"messageArgs": [
+"a"
+],
+"apiArgs": [],
+"bounds": {
+"left": 481,
+"top": 3350,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843692\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843692/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "element_tabbable_visible",
+"value": [
+"VIOLATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[8]/em[1]/span[1]/a[1]",
+"aria": "/document[1]/main[1]/paragraph[8]/link[2]"
+},
+"ruleTime": 0,
+"reasonId": "potential_visible",
+"message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 481,
+"top": 3350,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843692\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843692/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[8]/em[1]/span[2]/a[2]/span[1]/svg[1]",
+"aria": "/document[1]/main[1]/paragraph[8]/button[2]"
+},
+"ruleTime": 0,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 198,
+"top": 3372,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[8]/em[1]/span[3]/a[2]/span[1]/svg[1]",
+"aria": "/document[1]/main[1]/paragraph[8]/button[3]"
+},
+"ruleTime": 0,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 337,
+"top": 3391,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[8]/em[1]/span[4]/span[1]/a[2]/span[1]/svg[1]",
+"aria": "/document[1]/main[1]/paragraph[8]/button[4]"
+},
+"ruleTime": 0,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 271,
+"top": 3410,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "aria_hidden_nontabbable",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[8]/em[1]/span[4]/a[1]",
+"aria": "/document[1]/main[1]/paragraph[8]/link[6]"
+},
+"ruleTime": 0,
+"reasonId": "Fail_1",
+"message": "Element \"a\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+"messageArgs": [
+"a"
+],
+"apiArgs": [],
+"bounds": {
+"left": 620,
+"top": 3407,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843725\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843725/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "element_tabbable_visible",
+"value": [
+"VIOLATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[8]/em[1]/span[4]/a[1]",
+"aria": "/document[1]/main[1]/paragraph[8]/link[6]"
+},
+"ruleTime": 0,
+"reasonId": "potential_visible",
+"message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 620,
+"top": 3407,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843725\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843725/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[8]/em[1]/span[5]/a[2]/span[1]/svg[1]",
+"aria": "/document[1]/main[1]/paragraph[8]/button[5]"
+},
+"ruleTime": 0,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 267,
+"top": 3429,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[8]/em[1]/span[6]/a[2]/span[1]/svg[1]",
+"aria": "/document[1]/main[1]/paragraph[8]/button[6]"
+},
+"ruleTime": 0,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 196,
+"top": 3448,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[8]/em[1]/span[7]/a[2]/span[1]/svg[1]",
+"aria": "/document[1]/main[1]/paragraph[8]/button[7]"
+},
+"ruleTime": 0,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 177,
+"top": 3467,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[8]/em[1]/span[8]/span[1]/a[2]/span[1]/svg[1]",
+"aria": "/document[1]/main[1]/paragraph[8]/button[8]"
+},
+"ruleTime": 0,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 187,
+"top": 3486,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "aria_hidden_nontabbable",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[8]/em[1]/span[8]/a[1]",
+"aria": "/document[1]/main[1]/paragraph[8]/link[11]"
+},
+"ruleTime": 0,
+"reasonId": "Fail_1",
+"message": "Element \"a\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+"messageArgs": [
+"a"
+],
+"apiArgs": [],
+"bounds": {
+"left": 452,
+"top": 3483,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843662\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843662/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "element_tabbable_visible",
+"value": [
+"VIOLATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[8]/em[1]/span[8]/a[1]",
+"aria": "/document[1]/main[1]/paragraph[8]/link[11]"
+},
+"ruleTime": 1,
+"reasonId": "potential_visible",
+"message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 452,
+"top": 3483,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843662\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843662/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "aria_accessiblename_exists",
+"value": [
+"RECOMMENDATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[9]/em[1]/img[1]",
+"aria": "/document[1]/main[1]/paragraph[9]/img[1]"
+},
+"ruleTime": 0,
+"reasonId": "fail_no_accessible_name",
+"message": "Element <img> with \"img\" role has no accessible name",
+"messageArgs": [
+"img",
+"img"
+],
+"apiArgs": [],
+"bounds": {
+"left": 8,
+"top": 3518,
+"height": 0,
+"width": 0
+},
+"snippet": "<img data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843616\" alt=\"cottongin1s.jpg\" src=\"https://ucf.test.instructure.com/courses/1436309/files/100843616/download\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[11]/span[1]/span[1]/a[2]/span[1]/svg[1]",
+"aria": "/document[1]/main[1]/paragraph[11]/button[1]"
+},
+"ruleTime": 1,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 316,
+"top": 3571,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "aria_hidden_nontabbable",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[11]/span[1]/a[1]",
+"aria": "/document[1]/main[1]/paragraph[11]/link[2]"
+},
+"ruleTime": 0,
+"reasonId": "Fail_1",
+"message": "Element \"a\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+"messageArgs": [
+"a"
+],
+"apiArgs": [],
+"bounds": {
+"left": 708,
+"top": 3568,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843639\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843639/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "element_tabbable_visible",
+"value": [
+"VIOLATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[11]/span[1]/a[1]",
+"aria": "/document[1]/main[1]/paragraph[11]/link[2]"
+},
+"ruleTime": 0,
+"reasonId": "potential_visible",
+"message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 708,
+"top": 3568,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843639\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843639/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[11]/span[2]/a[2]/span[1]/svg[1]",
+"aria": "/document[1]/main[1]/paragraph[11]/button[2]"
+},
+"ruleTime": 0,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 333,
+"top": 3590,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[11]/span[3]/span[1]/a[2]/span[1]/svg[1]",
+"aria": "/document[1]/main[1]/paragraph[11]/button[3]"
+},
+"ruleTime": 1,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 373,
+"top": 3609,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "aria_hidden_nontabbable",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[11]/span[3]/a[1]",
+"aria": "/document[1]/main[1]/paragraph[11]/link[5]"
+},
+"ruleTime": 0,
+"reasonId": "Fail_1",
+"message": "Element \"a\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+"messageArgs": [
+"a"
+],
+"apiArgs": [],
+"bounds": {
+"left": 78,
+"top": 3625,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843806\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843806/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "element_tabbable_visible",
+"value": [
+"VIOLATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[11]/span[3]/a[1]",
+"aria": "/document[1]/main[1]/paragraph[11]/link[5]"
+},
+"ruleTime": 0,
+"reasonId": "potential_visible",
+"message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 78,
+"top": 3625,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843806\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843806/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[11]/span[4]/span[1]/a[2]/span[1]/svg[1]",
+"aria": "/document[1]/main[1]/paragraph[11]/button[4]"
+},
+"ruleTime": 0,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 215,
+"top": 3647,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "aria_hidden_nontabbable",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[11]/span[4]/a[1]",
+"aria": "/document[1]/main[1]/paragraph[11]/link[7]"
+},
+"ruleTime": 0,
+"reasonId": "Fail_1",
+"message": "Element \"a\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+"messageArgs": [
+"a"
+],
+"apiArgs": [],
+"bounds": {
+"left": 507,
+"top": 3644,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843707\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843707/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "element_tabbable_visible",
+"value": [
+"VIOLATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[11]/span[4]/a[1]",
+"aria": "/document[1]/main[1]/paragraph[11]/link[7]"
+},
+"ruleTime": 0,
+"reasonId": "potential_visible",
+"message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 507,
+"top": 3644,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843707\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843707/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[11]/span[5]/span[1]/a[2]/span[1]/svg[1]",
+"aria": "/document[1]/main[1]/paragraph[11]/button[5]"
+},
+"ruleTime": 0,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 264,
+"top": 3665,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "aria_hidden_nontabbable",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[11]/span[5]/a[1]",
+"aria": "/document[1]/main[1]/paragraph[11]/link[9]"
+},
+"ruleTime": 0,
+"reasonId": "Fail_1",
+"message": "Element \"a\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+"messageArgs": [
+"a"
+],
+"apiArgs": [],
+"bounds": {
+"left": 606,
+"top": 3663,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843618\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843618/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "element_tabbable_visible",
+"value": [
+"VIOLATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[11]/span[5]/a[1]",
+"aria": "/document[1]/main[1]/paragraph[11]/link[9]"
+},
+"ruleTime": 0,
+"reasonId": "potential_visible",
+"message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 606,
+"top": 3663,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843618\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843618/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[11]/span[6]/span[1]/a[2]/span[1]/svg[1]",
+"aria": "/document[1]/main[1]/paragraph[11]/button[6]"
+},
+"ruleTime": 0,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 344,
+"top": 3684,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "aria_hidden_nontabbable",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[11]/span[6]/a[1]",
+"aria": "/document[1]/main[1]/paragraph[11]/link[11]"
+},
+"ruleTime": 0,
+"reasonId": "Fail_1",
+"message": "Element \"a\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+"messageArgs": [
+"a"
+],
+"apiArgs": [],
+"bounds": {
+"left": 765,
+"top": 3681,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843738\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843738/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "element_tabbable_visible",
+"value": [
+"VIOLATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[11]/span[6]/a[1]",
+"aria": "/document[1]/main[1]/paragraph[11]/link[11]"
+},
+"ruleTime": 0,
+"reasonId": "potential_visible",
+"message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 765,
+"top": 3681,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843738\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843738/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "svg_graphics_labelled",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[11]/span[7]/span[1]/a[2]/span[1]/svg[1]",
+"aria": "/document[1]/main[1]/paragraph[11]/button[7]"
+},
+"ruleTime": 0,
+"reasonId": "fail_acc_name",
+"message": "The SVG element has no accessible name",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 206,
+"top": 3703,
+"height": 16,
+"width": 16
+},
+"snippet": "<svg style=\"width:1em; height:1em; vertical-align:middle; fill:currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 1920\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "aria_hidden_nontabbable",
+"value": [
+"VIOLATION",
+"FAIL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[11]/span[7]/a[1]",
+"aria": "/document[1]/main[1]/paragraph[11]/link[13]"
+},
+"ruleTime": 0,
+"reasonId": "Fail_1",
+"message": "Element \"a\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+"messageArgs": [
+"a"
+],
+"apiArgs": [],
+"bounds": {
+"left": 489,
+"top": 3700,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843638\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843638/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+},
+{
+"ruleId": "element_tabbable_visible",
+"value": [
+"VIOLATION",
+"POTENTIAL"
+],
+"node": {},
+"path": {
+"dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/p[11]/span[7]/a[1]",
+"aria": "/document[1]/main[1]/paragraph[11]/link[13]"
+},
+"ruleTime": 0,
+"reasonId": "potential_visible",
+"message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+"messageArgs": [],
+"apiArgs": [],
+"bounds": {
+"left": 489,
+"top": 3700,
+"height": 18,
+"width": 0
+},
+"snippet": "<a data-api-returntype=\"File\" data-api-endpoint=\"https://ucf.test.instructure.com/api/v1/courses/1436309/files/100843638\" aria-hidden=\"true\" href=\"https://ucf.test.instructure.com/courses/1436309/files/100843638/download?wrap=1\" title=\"Preview the document\" class=\"file_preview_link\">",
+"category": "Accessibility"
+}
+],
