@@ -14,7 +14,7 @@ app.post('/check', async (req, res) => {
   try {
     browser = await puppeteer.launch({
       args: puppeteer.defaultArgs(),
-      executablePath: puppeteer.executablePath(),
+      executablePath: '/usr/bin/google-chrome',
       headless: true,
     });
 
