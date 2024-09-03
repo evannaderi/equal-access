@@ -3,10 +3,10 @@ const chromium = require('@sparticuz/chromium');
 const puppeteer = isLocal ? require('puppeteer') : require('puppeteer-core');
 const path = require('path');
 const fs = require('fs');
+const { checkAccessibility } = require('./accessibilityChecker');
 
 exports.handler = async (event) => {
   let browser;
-  let htmlArray;
   chromium.setHeadlessMode = true;
   console.log("Chromium configuration:", chromium);
   console.log(`Is it local? ${isLocal}`);
@@ -20,21 +20,13 @@ exports.handler = async (event) => {
       headless: isLocal ? false : chromium.headless,
     });
 
-    if (event.body) {
-      try {
-        const body = JSON.parse(event.body);
-        htmlArray = body.html;
-      } catch (error) {
-        console.error("Error parsing event body:", error);
-      }
-    } else if (event.html) {
-      htmlArray = event.html;
-    }
-
-    console.log("Parsed htmlArray:", JSON.stringify(htmlArray, null, 2));
-    console.log("htmlArray type:", typeof htmlArray);
-    console.log("Is array?", Array.isArray(htmlArray));
-
+  let htmlArray;
+  if (event.body) {
+    htmlArray = typeof event.body === "string" ? JSON.parse(event.body).html : event.body.html;
+  } else {
+    htmlArray = event.html;
+  }
+    
     if (!htmlArray) {
       return {
         statusCode: 400,
@@ -59,32 +51,21 @@ exports.handler = async (event) => {
 
     const reports = [];
     for (const htmlContent of htmlArray) {
-      const page = await browser.newPage();
-      console.log("Successfully created new page");
-      await page.setContent(htmlContent, { waitUntil: 'domcontentloaded' });
-      await page.addScriptTag({ path: path.join(__dirname, 'dist/ace.js') });
-      const report = await page.evaluate(() => {
-        return new Promise((resolve, reject) => {
-          const checker = new ace.Checker();
-          checker.check(document, ["IBM_Accessibility"])
-            .then(function (report) {
-              resolve(report);
-            }).catch(function (error) {
-              reject(error);
-            });
-        });
-      });
+      const report = await checkAccessibility(browser, htmlContent);
       reports.push(report);
-      await page.close();
     }
 
     const filePath = isLocal ? 'report.txt' : '/tmp/report.txt';
-    fs.writeFileSync(filePath, JSON.stringify(reports, null, 2));
     console.log(`Report written successfully to ${filePath}`);
+
+    let responseBody = "";
+    for (const report of reports) {
+      responseBody += JSON.stringify(report, null, 2);
+    }
 
     return {
       statusCode: 200,
-      body: JSON.stringify(reports, null, 2)
+      body: responseBody
     };
   } catch (error) {
     console.error('An error occurred:', error);

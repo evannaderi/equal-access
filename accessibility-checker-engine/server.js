@@ -4,7 +4,7 @@ const fs = require('fs');
 const { checkAccessibility } = require('./accessibilityChecker');
 
 const app = express();
-const port = 3000;
+const port = 3002;
 
 app.use(express.json());
 
@@ -14,7 +14,6 @@ app.post('/check', async (req, res) => {
   try {
     browser = await puppeteer.launch({
       args: puppeteer.defaultArgs(),
-      executablePath: '/usr/bin/google-chrome',
       headless: true,
     });
 
@@ -43,7 +42,12 @@ app.post('/check', async (req, res) => {
     fs.writeFileSync('report.txt', JSON.stringify(reports, null, 2));
     console.log('Report written successfully to report.txt');
 
-    res.json(reports);
+    let responseBody = "";
+    for (const report of reports) {
+      responseBody += JSON.stringify(report, null, 2);
+    }
+
+    res.send(responseBody);
   } catch (error) {
     console.error('An error occurred:', error);
     res.status(500).json({ error: error.message });
